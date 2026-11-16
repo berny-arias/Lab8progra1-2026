@@ -44,11 +44,17 @@
     <ClInclude Include="Headers\TomatoesRepository.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Cheese.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Data\cheese.txt" />
     <Text Include="Data\herbs.txt" />
     <Text Include="Data\meats.txt" />
     <Text Include="Data\tomatoes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
 </Project>
