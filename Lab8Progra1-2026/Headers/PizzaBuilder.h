@@ -16,6 +16,7 @@ public:
 private:
     void WaitForEnterAndClear();
     bool QuiereSeguirAgregandoTomate();
+    bool QuiereSeguirAgregandoQueso();
     bool QuiereSeguirAgregandoCarne();
     void SelectTomatoes();
     void IrAlSiguienteIngrediente();

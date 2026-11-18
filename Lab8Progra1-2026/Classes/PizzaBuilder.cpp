@@ -27,6 +27,27 @@ bool PizzaBuilder::QuiereSeguirAgregandoCarne() {
     }
 }
 
+bool PizzaBuilder::QuiereSeguirAgregandoQueso() {
+    while (true) {
+        std::cout << "\n¿Quieres seguir agregando queso?" << std::endl;
+        std::cout << "1. Sí" << std::endl;
+        std::cout << "2. No, pasar al siguiente ingrediente" << std::endl;
+        std::cout << "Elige una opción: ";
+
+        std::string opcion;
+        std::getline(std::cin, opcion);
+
+        if (opcion == "1") {
+            return true;
+        }
+        if (opcion == "2") {
+            return false;
+        }
+
+        std::cout << "Opción no válida. Escribe 1 o 2." << std::endl;
+    }
+}
+
 void PizzaBuilder::WaitForEnterAndClear() {
     std::cout << "\nPresiona Enter para continuar...";
     std::string line;
@@ -211,7 +232,7 @@ void PizzaBuilder::SelectCheese() {
 
         if (exitosa && !yaPregunto) {
             yaPregunto = true;
-            if (!QuiereSeguirAgregandoTomate()) {
+            if (!QuiereSeguirAgregandoQueso()) {
                 system("cls");
                 return;
             }
